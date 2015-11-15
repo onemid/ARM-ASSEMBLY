@@ -1,5 +1,3 @@
-403410006 龔逸中 * Assembly Language * HW-4
-  
 0. 題目：  
 “README.txt” file describes the features in your program and how to compile and run your program
 
