@@ -27,3 +27,8 @@ Description: 2x3 and 3x2 matrices multiplication and add a 2x2 matrix operation.
 
 -->With MLA+Looping Branch
 
+###HW6
+Description: Write a function for sorting and using branch to other function.
+
+###HW7
+Description: Write a C code to call the NumSort in numsort.s with using APCS.
