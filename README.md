@@ -32,3 +32,6 @@ Description: Write a function for sorting and using branch to other function.
 
 ###HW7
 Description: Write a C code to call the NumSort in numsort.s with using APCS.
+
+###HW8
+Description: With HW7 we need to write an assembly code to output the file.
