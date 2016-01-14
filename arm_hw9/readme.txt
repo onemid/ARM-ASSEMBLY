@@ -4,7 +4,7 @@
 “README.txt” file describes the features in your program and how to compile and run your program
 
 1. 程式內容：   
-此次程式包含兩個部分，第一個檔案 hw9.c 為無 SIMD 指令進行矩陣運算，第二個檔案 hw9simd.c 則利用 SIMD 搭配 SSE 2 以及 AVX 2 指令進行矩陣運算，各編譯為 hw9.exe 及 hw9simd.exe，兩者程式不外乎利用迴圈，固定 1 row 與其他 row 進行乘法加總，但利用 SIMD 指令可以單一指令處理多資料，處理速度較無使用該指令者快上大約 22% (Without SIMD vs SSE 2) 及 51% (Without SIMD vs AVX 2)（註一）。
+此次程式包含三個版本程式，第一個檔案 hw9.c 為無 SIMD 指令進行矩陣運算，第二個檔案 hw9simd.c 則利用 SIMD 搭配 SSE 2，第三個檔案 hw9simd_avx 使用 AVX 2 指令進行矩陣運算，各編譯為 hw9.exe 、 hw9simd.exe 以及 hw9simd_avx，兩者程式不外乎利用迴圈，固定 1 row 與其他 row 進行乘法加總，但利用 SIMD 指令可以單一指令處理多資料，處理速度較無使用該指令者快上大約 22% (Without SIMD vs SSE 2) 及 51% (Without SIMD vs AVX 2)（註一）。
 
 註一：於 Build Machine 進行測試。
 
