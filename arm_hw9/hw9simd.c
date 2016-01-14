@@ -67,7 +67,7 @@ int main(int argc, const char * argv[])
     
     for (int i = 0; i < MAX_SIZE; i++) {
         
-        // Initialize the m128 tmpSum Array and Assign tmpSumArray with Force Convert to it.
+        // Initialize the m128d tmpSum Array and Assign tmpSumArray with Force Convert to it.
         
         __m128d *tmpSum_SSE2 = (__m128d *) tmpSumArray_SSE2;
         
@@ -81,7 +81,7 @@ int main(int argc, const char * argv[])
             for (int k = 0; k < MAX_SIZE / 2; k++) {
                 
                 // MAX_SIZE / 2 : Because of _mm_***_pd does 2 data stream at once.
-                // Initialize the m128 tmpMul Array and Assign tmpMulArray with Force Convert to it.
+                // Initialize the m128d tmpMul Array and Assign tmpMulArray with Force Convert to it.
                 // Do Multiple and Summation
                 
                 __m128d *tmpMul_SSE2 = (__m128d *) tmpMulArray_SSE2;
