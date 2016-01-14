@@ -48,7 +48,9 @@ OS: Ubuntu 14.04.3 LTS
 
 ###(3)
 系上主機測試環境（二）：mcore8.cs.ccu.edu.tw
+
 CPU: Intel® Xeon® Processor E5405  (12M Cache, 2.00 GHz, 1333 MHz FSB) with SSE4.1
+
 OS: Ubuntu 14.04.3 LTS
 
 測試結果：
