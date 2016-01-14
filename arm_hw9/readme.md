@@ -8,7 +8,7 @@
 
 註一：於 Build Machine 進行測試。
 
-2. 程式執行環境：  
+##2. 程式執行環境：  
 
 ###(1)
 Build Machine 配備：MacBook Air 13” 2014 Late
