@@ -207,7 +207,7 @@ int main(int argc, const char * argv[])
     
     for (int i = 0; i < MAX_SIZE; i++) {
         
-        // Initialize the m128 tmpSum Array and Assign tmpSumArray with Force Convert to it.
+        // Initialize the m256d tmpSum Array and Assign tmpSumArray with Force Convert to it.
         
         __m256d *tmpSum_AVX2 = (__m256d *) tmpSumArray_AVX2;
         
@@ -220,8 +220,8 @@ int main(int argc, const char * argv[])
             
             for (int k = 0; k < MAX_SIZE / 4; k++) {
                 
-                // MAX_SIZE / 2 : Because of _mm_***_pd does 2 data stream at once.
-                // Initialize the m128 tmpMul Array and Assign tmpMulArray with Force Convert to it.
+                // MAX_SIZE / 4 : Because of _mm256_***_pd does 4 data stream at once.
+                // Initialize the m256d tmpMul Array and Assign tmpMulArray with Force Convert to it.
                 // Do Multiple and Summation
                 
                 __m256d *tmpMul_AVX2 = (__m256d *) tmpMulArray_AVX2;
@@ -244,8 +244,8 @@ int main(int argc, const char * argv[])
     printf("CALCULATION WITH AVX2: %lf", (double)(end_time - begin_time) / CLOCKS_PER_SEC);
     
     
-    // Reference: https://msdn.microsoft.com/en-us/library/7xzea3d6(v=vs.80).aspx
-    // For Explaining _mm_***_pd Usage.
+    // Reference: https://software.intel.com/en-us/node/524052
+    // For Explaining _mm256_***_pd Usage.
     
     /*---------- END of CALCULATING NUMBERS with AVX 2---------*/
     return 0;
